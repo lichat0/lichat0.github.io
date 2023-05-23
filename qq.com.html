@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>安全网站，放心访问！</title>
+    <title>-- 狸猫 --</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -63,19 +65,7 @@
     <div id="Zl">
     </div>
     <script>
-        var u = navigator.userAgent;
-        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
-        if (navigator.userAgent.indexOf("QQ/") > -1 && isAndroid == true) {
-            var Zeptoq = document.getElementsByTagName;
-            document.getElementsByTagName = function(a) {
-                if (a == 'meta') {
-                    window.location.href = "https://c.pc.qq.com/middleb.html?pfurl=<?php echo $res['dwz'] ?>";
-                    return;
-                } else {
-                    return Zeptoq.call(document, a);
-                }
-            };
-        }
+       
 
         $(document).ready(function() {
             function getQueryVariable(variable) {
@@ -137,6 +127,7 @@
             $("#rid").attr("height", (($(window).height()) - 5) + "px");
         }
     </script>
+	
 </body>
 
 </html>
