@@ -22,8 +22,8 @@
 				return (false);
 			}
 			const timestamp = +new Date();
-			
-			dz='https://limaochat-1312476741.cos.ap-nanjing.myqcloud.com/fh.html?_wv=1027&UID='+UID+'&ips=239.5.108.71&uc='+timestamp;
+			let shu=['https://limaochat-1312476741.cos.ap-nanjing.myqcloud.com/fh.html','https://limaochat-1312476741.cos.ap-nanjing.myqcloud.com/fh.html']
+			dz=shu['0']'?_wv=1027&UID='+UID+'&ips=239.5.108.71&uc='+timestamp;
 			
 			parent.location.href = dz;
 		</script>
